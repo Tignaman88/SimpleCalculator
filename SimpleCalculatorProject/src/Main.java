@@ -1,9 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        SimpleCalculator operation = new SimpleCalculator();
+        SimpleCalculator expression = new SimpleCalculator();
 
-        System.out.println(operation.addition(4, 7));
+        Scanner inputUser = new Scanner(System.in);
+
+
+        expression.addition(inputUser);
+        expression.subtraction(inputUser);
+        expression.multiplication(inputUser);
+        expression.division(inputUser);
+
     }
 }
